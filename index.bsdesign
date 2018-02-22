@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	 <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="css/bootstrap.min.css" rel="stylesheet">
+         <link href="css/material-bootstrap-wizard.css" rel="stylesheet">
+         <link href="css/styleinput.css" rel="stylesheet"> 
+        <script src='js/jquery.js'></script>
+		<script src='js/bootstrap.min.js'></script>
+    	<script  src="js/jquery-wizard.js"></script>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="container">
+	        <div class="row">
+		        <div class="col-sm-8 col-sm-offset-2">
+		            <!-- Wizard container -->
+		            <div class="wizard-container">
+		                <div class="card wizard-card" data-color="purple" id="wizard">
+		                    <form action="formdata.php" method="POST" novalidate="novalidate">
+		                <!--        You can switch " data-color="blue" "  with one of the next bright colors: "green", "orange", "red", "purple"             -->
+
+		                    	<div class="wizard-header">
+		                        	<h3 class="wizard-title">
+		                        		Welcome to feedback system
+		                        	</h3>
+									<h5>Give ours feedbacks. Right time now .</h5>
+		                    	</div>
+								<div class="wizard-navigation">
+									<ul class="nav nav-pills">
+			                            <li style="width: 33.3333%;" class="active"><a href="#details" data-toggle="tab" aria-expanded="true">Staff detalis</a></li>
+			                            <li style="width: 33.3333%;"><a href="#captain" data-toggle="tab">Rating</a></li>
+			                            <li style="width: 33.3333%;"><a href="#description" data-toggle="tab">Other Discription</a></li>
+			                        </ul>
+								<div class="moving-tab" style="width: 156.667px; transform: translate3d(-8px, 0px, 0px); transition: transform 0s;">Fiil staff details</div></div>
+
+		                        <div class="tab-content">
+		                            <div class="tab-pane active" id="details">
+		                            	<div class="row">
+			                            	<div class="col-sm-12">
+			                                	<h4 class="info-text"> Let's start with the basic details.</h4>
+			                            	</div>
+		                                	<div class="col-sm-6">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="glyphicon glyphicon-user"></i>
+													</span>
+													<div class="form-group label-floating is-empty">
+			                                          	<label class="control-label">Staff name</label>
+			                                          	<input name="name" type="text" class="form-control">
+			                                        <span class="material-input"></span></div>
+												</div>
+
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="glyphicon glyphicon-year">Year</i>
+													</span>
+													<div class="form-group label-floating is-empty">
+			                                          	<label class="control-label">Year</label>
+			                                          	<input name="name2" type="text" class="form-control">
+			                                        <span class="material-input"></span></div>
+												</div>
+
+		                                	</div>
+		                                	<div class="col-sm-6">
+		                                    	<div class="form-group label-floating is-empty">
+		                                        	<label class="control-label">Department</label>
+	                                        		<select class="form-control" name="department">
+														<option disabled="" selected=""></option>
+	                                                	<option value="MCA"> MCA </option>
+	                                                	<option value="MBA"> MBA </option>
+	                                                	<option value="ME"> ME </option>
+	                                                	<option value="BE"> BE </option>
+	                                                	<option value="BE ECE"> BE ECE </option>
+	                                                	<option value="BE EEE"> BE EEE </option>
+	                                                	<option value="BE CSE"> BE CSE </option>
+	                                                	<option value="BE AERO"> BE AERO </option>
+	                                                	<option value="...">...</option>
+		                                        	</select>
+		                                    	<span class="material-input"></span></div>
+												<div class="form-group label-floating is-empty">
+		                                        	<label class="control-label">Semester</label>
+	                                        		<select class="form-control">
+														<option disabled="" selected=""></option>
+	                                                	<option value="1"> Semester 1 </option>
+	                                                	<option value="2"> Semester 2 </option>
+	                                                	<option value="3"> Semester 3 </option>
+	                                                	<option value="4"> Semester 4 </option>
+	                                                	<option value="5"> Semester 5 </option>
+	                                                	<option value="6"> Semester 6 </option>
+	                                                	<option value="7"> Semester 7 </option>
+	                                                	<option value="8"> Semester 8 </option>
+		                                        	</select>
+		                                    	<span class="material-input"></span></div>
+		                                	</div>
+		                            	</div>
+		                            </div>
+		                            <div class="tab-pane" id="captain">
+		                                <h4 class="info-text">Please select the rating below table</h4>
+		                                <p class="description">Read all the questions and rating our score</p>
+		                                <div class="row">
+		                                    
+		                                	<div class="table-responsive-md">
+  <table class="table table-striped table table-bordered table table-hover ">
+  <thead>
+    <tr class="bg-primary">
+      <th scope="col"><i class="icon-star"></i>Type</th>
+      <th scope="col">Strongly Agree</th>
+      <th scope="col">Agree</th>
+      <th scope="col">Neutral</th>
+      <th scope="col">Disagree</th>
+      <th scope="col">Strong Disagree</th>
+    </tr>
+  </thead>
+  <tbody>
+    <div role="group1">
+    <tr>
+      <th scope="row"><label name="q1">1) Treated students with respect</label></th>
+      <td> <input type="radio" id="featured-1" name="featured1" value="5">
+           <label for="featured-1">5</label></td>
+      <td> <input type="radio" id="featured-2" name="featured1" value="4">
+           <label for="featured-2">4</label></td>
+      <td> <input type="radio" id="featured-3" name="featured1" value="3">
+           <label for="featured-3">3</label></td>
+      <td> <input type="radio" id="featured-4" name="featured1" value="2">
+           <label for="featured-4">2</label></td>
+      <td> <input type="radio" id="featured-5" name="featured1" value="1">
+           <label for="featured-5">1</label></td>
+    </tr>
+  </div>
+  <div role="group2">
+    <tr>
+      <th scope="row"><label name="q2">2) Made students feel free to ask questions</label></th>
+      <td> <input type="radio" id="featured-6" name="featured2">
+           <label for="featured-6">5</label></td>
+      <td> <input type="radio" id="featured-7" name="featured2">
+           <label for="featured-7">4</label></td>
+      <td> <input type="radio" id="featured-8" name="featured2">
+           <label for="featured-8">3</label></td>
+      <td> <input type="radio" id="featured-9" name="featured2">
+           <label for="featured-9">2</label></td>
+      <td> <input type="radio" id="featured-10" name="featured2">
+           <label for="featured-10">1</label></td>
+    </tr>
+  </div>
+  <div role="group3">
+    <tr>
+      <th scope="row"><label name="q3">3) Was capable of answering question</label></th>
+      <td> <input type="radio" id="featured-11" name="featured3">
+           <label for="featured-11">5</label></td>
+      <td> <input type="radio" id="featured-12" name="featured3">
+           <label for="featured-12">4</label></td>
+      <td> <input type="radio" id="featured-13" name="featured3">
+           <label for="featured-13">3</label></td>
+      <td> <input type="radio" id="featured-14" name="featured3">
+           <label for="featured-14">2</label></td>
+      <td> <input type="radio" id="featured-15" name="featured3">
+           <label for="featured-15">1</label></td>
+    </tr>
+  </div>
+  <div role="group4">
+    <tr>
+      <th scope="row"><label name="q4">4) Communicated clearly</label></th>
+      <td>  <input type="radio" id="featured-16" name="featured4">
+           <label for="featured-16">5</label></td>
+      <td> <input type="radio" id="featured-17" name="featured4">
+           <label for="featured-17">4</label></td>
+      <td> <input type="radio" id="featured-18" name="featured4">
+           <label for="featured-18">3</label></td>
+      <td> <input type="radio" id="featured-19" name="featured4">
+           <label for="featured-19">2</label></td>
+      <td> <input type="radio" id="featured-20" name="featured4">
+           <label for="featured-20">1</label></td>
+    </tr>
+  </div>
+  <div role="group5">
+    <tr>
+      <th scope="row"><label name="q5">5) Assigned homework that was relevant to course material</label></th>
+      <td> <input type="radio" id="featured-21" name="featured5">
+           <label for="featured-21">5</label></td>
+      <td> <input type="radio" id="featured-22" name="featured5">
+           <label for="featured-22">4</label></td>
+      <td> <input type="radio" id="featured-23" name="featured5">
+           <label for="featured-23">3</label></td>
+      <td> <input type="radio" id="featured-24" name="featured5">
+           <label for="featured-24">2</label></td>
+      <td> <input type="radio" id="featured-25" name="featured5">
+           <label for="featured-25">1</label></td>
+    </tr>
+  </div>
+  <div role="group6">
+    <tr>
+      <th scope="row"><label name="q6">6) Allowed sufficient time to complete homework assignments</label></th>
+      <td> <input type="radio" id="featured-26" name="featured6">
+           <label for="featured-26">5</label></td>
+      <td> <input type="radio" id="featured-27" name="featured6">
+           <label for="featured-27">4</label></td>
+      <td> <input type="radio" id="featured-28" name="featured6">
+           <label for="featured-28">3</label></td>
+      <td> <input type="radio" id="featured-29" name="featured6">
+           <label for="featured-29">2</label></td>
+      <td> <input type="radio" id="featured-30" name="featured6">
+           <label for="featured-30">1</label></td>
+    </tr>
+  </div>
+  <div role="group7">
+    <tr>
+      <th scope="row"><label name="q7">7) Gave exams that reflected the material covered in lectures</label></th>
+      <td> <input type="radio" id="featured-31" name="featured7">
+           <label for="featured-31">5</label></td>
+      <td> <input type="radio" id="featured-32" name="featured7">
+           <label for="featured-32">4</label></td>
+      <td> <input type="radio" id="featured-33" name="featured7">
+           <label for="featured-33">3</label></td>
+      <td> <input type="radio" id="featured-34" name="featured7">
+           <label for="featured-34">2</label></td>
+      <td> <input type="radio" id="featured-35" name="featured7">
+           <label for="featured-35">1</label></td>
+    </tr>
+  </div>
+  <div role="group8">
+    <tr>
+      <th scope="row"><label name="q8">8) Provided constructive feedback on graded material</label></th>
+      <td> <input type="radio" id="featured-36" name="featured8">
+           <label for="featured-36">5</label></td>
+      <td> <input type="radio" id="featured-37" name="featured8">
+           <label for="featured-37">4</label></td>
+      <td> <input type="radio" id="featured-38" name="featured8">
+           <label for="featured-38">3</label></td>
+      <td> <input type="radio" id="featured-39" name="featured8">
+           <label for="featured-39">2</label></td>
+      <td> <input type="radio" id="featured-40" name="featured8">
+           <label for="featured-40">1</label></td>
+    </tr>
+  </div>
+  <div role="group9">
+    <tr>
+      <th scope="row"><label name="q9">9) Kept students informed about their class grades and progress</label></th>
+      <td> <input type="radio" id="featured-41" name="featured9">
+           <label for="featured-41">5</label></td>
+      <td> <input type="radio" id="featured-42" name="featured9">
+           <label for="featured-42">4</label></td>
+      <td> <input type="radio" id="featured-43" name="featured9">
+           <label for="featured-43">3</label></td>
+      <td> <input type="radio" id="featured-44" name="featured9">
+           <label for="featured-44">2</label></td>
+      <td> <input type="radio" id="featured-45" name="featured9">
+           <label for="featured-45">1</label></td>
+    </tr>
+  </div>
+  <div role="group10">
+    <tr>
+      <th scope="row"><label name="q10">10) Was available outside of lecture</label></th>
+      <td> <input type="radio" id="featured-46" name="featured10">
+           <label for="featured-46">5</label></td>
+      <td> <input type="radio" id="featured-47" name="featured10">
+           <label for="featured-47">4</label></td>
+      <td> <input type="radio" id="featured-48" name="featured10">
+           <label for="featured-48">3</label></td>
+      <td> <input type="radio" id="featured-49" name="featured10">
+           <label for="featured-49">2</label></td>
+      <td> <input type="radio" id="featured-50" name="featured10">
+           <label for="featured-50">1</label></td>
+    </tr>
+  </div>
+  <div role="group11">
+    <tr>
+      <th scope="row"><label name="q11">11) Set and followed clearly defined grading criteria</label></th>
+      <td> <input type="radio" id="featured-51" name="featured11">
+           <label for="featured-51">5</label></td>
+      <td> <input type="radio" id="featured-52" name="featured11">
+           <label for="featured-52">4</label></td>
+      <td> <input type="radio" id="featured-53" name="featured11">
+           <label for="featured-53">3</label></td>
+      <td> <input type="radio" id="featured-54" name="featured11">
+           <label for="featured-54">2</label></td>
+      <td> <input type="radio" id="featured-55" name="featured11">
+           <label for="featured-55">1</label></td>
+    </tr>
+  </div>
+  <div role="group12">
+    <tr>
+      <th scope="row"><label name="q12">12) Utilized the entire allotted lecture time</label></th>
+      <td> <input type="radio" id="featured-56" name="featured12">
+           <label for="featured-56">5</label></td>
+      <td> <input type="radio" id="featured-57" name="featured12">
+           <label for="featured-57">4</label></td>
+      <td> <input type="radio" id="featured-58" name="featured12">
+           <label for="featured-58">3</label></td>
+      <td> <input type="radio" id="featured-59" name="featured12">
+           <label for="featured-59">2</label></td>
+      <td> <input type="radio" id="featured-60" name="featured12">
+           <label for="featured-60">1</label></td>
+    </tr>
+  </div>
+  <div role="group13">
+    <tr>
+      <th scope="row"><label name="q13">13) Was enthusiatic about teaching the course</label></th>
+      <td> <input type="radio" id="featured-61" name="featured13">
+           <label for="featured-61">5</label></td>
+      <td> <input type="radio" id="featured-62" name="featured13">
+           <label for="featured-62">4</label></td>
+      <td> <input type="radio" id="featured-63" name="featured13">
+           <label for="featured-63">3</label></td>
+      <td> <input type="radio" id="featured-64" name="featured13">
+           <label for="featured-64">2</label></td>
+      <td> <input type="radio" id="featured-65" name="featured13">
+           <label for="featured-65">1</label></td>
+    </tr>
+  </div>
+  <div role="group14">
+    <tr>
+      <th scope="row"><label name="q14">14) Completed the objectives outlined in the course description</label></th>
+      <td> <input type="radio" id="featured-66" name="featured14">
+           <label for="featured-66">5</label></td>
+      <td> <input type="radio" id="featured-67" name="featured14">
+           <label for="featured-67">4</label></td>
+      <td> <input type="radio" id="featured-68" name="featured14">
+           <label for="featured-68">3</label></td>
+      <td> <input type="radio" id="featured-69" name="featured14">
+           <label for="featured-69">2</label></td>
+      <td> <input type="radio" id="featured-70" name="featured14">
+           <label for="featured-70">1</label></td>
+    </tr>
+  </div>
+  <div role="group15">
+    <tr>
+      <th scope="row"><label name="q15">15) I would recommended this instructor</label></th>
+      <td><input type="radio" id="featured-71" name="featured14">
+           <label for="featured-71">5</label></td>
+      <td> <input type="radio" id="featured-72" name="featured14">
+           <label for="featured-72">4</label></td>
+      <td> <input type="radio" id="featured-73" name="featured14">
+           <label for="featured-73">3</label></td>
+      <td> <input type="radio" id="featured-74" name="featured14">
+           <label for="featured-74">2</label></td>
+      <td> <input type="radio" id="featured-75" name="featured14">
+           <label for="featured-75">1</label></td>
+    </tr>
+  </div>
+  </tbody>
+  </table>
+</div>
+
+		                                </div>
+		                            </div>
+		                            <div class="tab-pane" id="description">
+		                                <div class="row">
+		                                    <h4 class="info-text"> Drop us a small description.</h4>
+		                                    <div class="col-sm-6 col-sm-offset-1">
+	                                    		<div class="form-group is-empty">
+		                                            <label>Other discription about the staff fill our in below</label>
+		                                            <textarea class="form-control" placeholder="" rows="6"></textarea>
+		                                        <span class="material-input"></span></div>
+		                                    </div>
+		                                   </div>
+		                            </div>
+		                        </div>
+	                        	<div class="wizard-footer">
+	                            	<div class="pull-right">
+	                                    <input type="button" class="btn btn-next btn-fill btn-danger btn-wd" name="next" value="Next">
+	                                    <input type="button" class="btn btn-finish btn-fill btn-danger btn-wd" name="finish" value="Finish" style="display: none;">
+	                                </div>
+	                                <div class="pull-left">
+	                                    <input type="button" class="btn btn-previous btn-fill btn-default btn-wd disabled" name="previous" value="Previous">
+	                                </div>
+	                                <div class="clearfix"></div>
+	                        	</div>
+		                    </form>
+		                </div>
+		            </div> <!-- wizard container -->
+		        </div>
+	    	</div> <!-- row -->
+		</div>
+</body>
+</html>
